@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Division - Student Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #f0f0f0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            height: 50px;
+        }
+        
+        .banner-img {
+            height: 50px;
+        }
+        
+        /* Navigation Styles */
+        .nav {
+            background-color: #e6e6e6;
+            padding: 10px 0;
+        }
+        
+        .nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav ul li {
+            margin-right: 10px;
+        }
+        
+        .nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+        
+        /* Form Styles */
+        .form-container {
+            padding: 20px;
+            background-color: white;
+        }
+        
+        .form-title {
+            color: #f90;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid #f90;
+            padding-bottom: 5px;
+        }
+        
+        .form-subtitle {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+        
+        .mandatory {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        .form-col {
+            flex: 1;
+            min-width: 250px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-input, .form-select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .form-field {
+            margin-bottom: 12px;
+        }
+        
+        .date-container {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .date-field {
+            flex: 1;
+        }
+        
+        .radio-group {
+            margin-top: 5px;
+        }
+        
+        .radio-label {
+            margin-right: 15px;
+        }
+        
+        .file-input-note {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .submit-btn {
+            padding: 8px 15px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .asterisk {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="logo-container">
+                <img src="https://ledp.ictd.gov.bd/global/img/ictdd.png" alt="logo" class="logo-img">
+            </div>
+            <img src="https://ledp.ictd.gov.bd/global/img/ledp.apng" alt="Learning and Earning Development" class="banner-img">
+            <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?t=st=1741550315~exp=1741553915~hmac=75f7d492358349b94c57808c5bae4632fbbe655f810d15f2e9dbc8e5f8043dda&w=1480" class="banner-img">
+        </div>
+        
+        <!-- Navigation Section -->
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Course Module - 2025</a></li>
+                <li><a href="#">Class Schedule</a></li>
+                <li><a href="#">Success Story</a></li>
+                <li><a href="#">Attendance ▼</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        
+        <!-- Form Section -->
+        <div class="form-container">
+            <h2 class="form-title">Student Registration Form</h2>
+            <p class="form-subtitle">Please enter relevant information</p>
+            <p class="mandatory">Mandatory Field<span class="asterisk">*</span></p>
+            
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-field">
+                            <label class="form-label">District <span class="asterisk">*</span> <small>(Institute District: Where you want to do your course)</small></label>
+                            <select class="form-select">
+                                <option selected disabled>--Select One--</option>
+                                <option>Sylhet</option>
+                                <option>Dhaka</option>
+                                <option>Chittagong</option>
+                                <option>Khulna</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Course <span class="asterisk">*</span></label>
+                            <select class="form-select">
+                                <option selected disabled>--Select One--</option>
+                                <option>Artificial Intelligence</option>
+                                <option>Web Development</option>
+                                <option>Graphics Designing</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Student Name <span class="asterisk">*</span></label>
+                            <input type="text" class="form-input">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Father Name <span class="asterisk">*</span></label>
+                            <input type="text" class="form-input">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Mother Name <span class="asterisk">*</span></label>
+                            <input type="text" class="form-input">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Date of Birth <span class="asterisk">*</span></label>
+                            <div class="date-container">
+                                <div class="date-field">
+                                    <label>Day:</label>
+                                    <select class="form-select">
+                                        <option selected disabled>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                    </select>
+                                </div>
+                                <div class="date-field">
+                                    <label>Month:</label>
+                                    <select class="form-select">
+                                        <option selected disabled>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                </div>
+                                <div class="date-field">
+                                    <label>Year:</label>
+                                    <select class="form-select">
+                                        <option selected disabled>Select</option>
+                                        <option>1995</option>
+                                        <option>1996</option>
+                                        <option>1997</option>
+                                        <option>1998</option>
+                                        <option>1999</option>
+                                        <option>2000</option>
+                                        <option>2001</option>
+                                        <option>2002</option>
+                                        <option>2003</option>
+                                        <option>2004</option>
+                                        <option>2005</option>
+                                        <option>2006</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Gender <span class="asterisk">*</span></label>
+                            <div class="radio-group">
+                                <input type="radio" id="male" name="gender">
+                                <label for="male" class="radio-label">Male</label>
+                                <input type="radio" id="female" name="gender">
+                                <label for="female" class="radio-label">Female</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Physically Handicapped <span class="asterisk">*</span></label>
+                            <div class="radio-group">
+                                <input type="radio" id="handicap-yes" name="handicapped">
+                                <label for="handicap-yes" class="radio-label">Yes</label>
+                                <input type="radio" id="handicap-no" name="handicapped">
+                                <label for="handicap-no" class="radio-label">No</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Email <span class="asterisk">*</span></label>
+                            <input type="email" class="form-input">
+                            <div class="example">(e.g: example@mail.com)</div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Phone (Must be 11 Digits) <span class="asterisk">*</span></label>
+                            <input type="text" class="form-input">
+                            <div class="example">(e.g:01551234569)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-col">
+                        <div class="form-field">
+                            <label class="form-label">Identification Type <span class="asterisk">*</span></label>
+                            <select class="form-select">
+                                <option selected disabled>Select One</option>
+                                <option>Birth Certificate No.</option>
+                                <option>National ID</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label style="font-size: medium;">Identification No. <small>(Must be 10 digits for new NID or 17 digits for old NID. If your National ID is 13 digits, then please add your birth year with the ID as prefix. Example: 1980XXXXXXXXXXXXX)</small></label>
+                            <input type="text" class="form-input">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Home District <span class="asterisk">*</span></label>
+                            <select class="form-select">
+                                <option selected disabled>--Select One--</option>
+                                <option>Sylhet</option>
+                                <option>Dhaka</option>
+                                <option>Chittagong</option>
+                                <option>Khulna</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Upazila <span class="asterisk">*</span></label>
+                            <select class="form-select">
+                                <option>Select One</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Village/House No./Road No./Other Alternative <span class="asterisk">*</span></label>
+                            <input type="text" class="form-input">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Post Office <span class="asterisk">*</span></label>
+                            <input type="text" class="form-input">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Educational Qualification <span class="asterisk">*</span> <small>(Higher Level)</small></label>
+                            <select class="form-select">
+                                <option>--Select One--</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Have any computer? <span class="asterisk">*</span></label>
+                            <div class="radio-group">
+                                <input type="radio" id="computer-yes" name="computer">
+                                <label for="computer-yes" class="radio-label">Yes</label>
+                                <input type="radio" id="computer-no" name="computer">
+                                <label for="computer-no" class="radio-label">No</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Photograph <span class="asterisk">*</span></label>
+                            <input type="file" class="form-input">
+                            <p class="file-input-note">(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</p>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label class="form-label">Signature <span class="asterisk">*</span></label>
+                            <input type="file" class="form-input">
+                            <p class="file-input-note">(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</p>
+                        </div>
+                        
+                        <div class="form-field">
+                            <button type="submit" class="submit-btn">Submit Data</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
